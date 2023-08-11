@@ -1,0 +1,17 @@
+export { default as voyage } from "./18-days-voyage.jpg";
+export { default as architecturals } from "./architecturals.jpg";
+export { default as behindWaves } from "./behind-the-waves.jpg";
+export { default as cityskapes } from "./cityscapes.jpg";
+export { default as calm } from "./calm-waters.jpg";
+export { default as darkForest } from "./dark-forest.jpg";
+export { default as africa } from "./king-on-africa.jpg";
+export { default as dreams } from "./land-of-dreams.jpg";
+export { default as milkyway } from "./milky-way.jpg";
+export { default as moon } from "./moon-of-appalacia.jpg";
+export { default as mountains } from "./mountains.jpg";
+export { default as sea } from "./rage-of-the-sea.jpg";
+export { default as running } from "./running-free.jpg";
+export { default as somwarpet } from "./somwarpet.jpg";
+export { default as trip } from "./trip-to-nowhere.jpg";
+export { default as corners } from "./unforeseen-corners.jpg";
+export { default as tour } from "./world-tour.jpg";

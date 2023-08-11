@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-const Arrow = () => {
+const Arrow: React.FC<{ Bg: string }> = ({ Bg }) => {
   return (
     <Svg>
-      <g fill="#fff" fillRule="evenodd" stroke="#fff">
+      <g
+        fill={Bg === "black" ? "#fff" : "rgba(0, 0, 0, 1)"}
+        fillRule="evenodd"
+        stroke={Bg === "black" ? "#fff" : "rgba(0, 0, 0, 1)"}
+      >
         <path d="M0 7h41.864M35.428 1l6 6-6 6" />
       </g>
     </Svg>

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const Burger = () => {
+const Burger: React.FC<{ onClick: () => void }> = ({ onClick }) => {
   return (
-    <Svg>
+    <Svg onClick={onClick}>
       <g fillRule="evenodd">
         <path d="M0 0h20v1H0zM0 5h20v1H0z" />
       </g>
