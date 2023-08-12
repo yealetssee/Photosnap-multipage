@@ -1,14 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 type PropsType = {
   logo: JSX.Element;
   title: string;
   description: string;
+  double?: boolean;
 };
 
-const Feature: React.FC<PropsType> = ({ logo, title, description }) => {
+const Feature: React.FC<PropsType> = ({ logo, title, description, double }) => {
   return (
-    <Wrapper>
+    <Wrapper double={double}>
       {logo}
 
       <Title>{title}</Title>
@@ -19,22 +20,31 @@ const Feature: React.FC<PropsType> = ({ logo, title, description }) => {
 
 export default Feature;
 
-const Wrapper = styled.div`
-  padding-top: 8rem;
-  padding-inline: 3.3rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+type PropType = {
+  double: boolean;
+};
 
-  align-items: center;
-  @media (min-width: 568px) {
-    padding-inline: 15.5rem;
-  }
-  @media (min-width: 1100px) {
-    padding-inline: 0rem;
-    padding-top: 12rem;
-  }
-`;
+const Wrapper = styled.div<PropType>(
+  ({ double }) => css`
+    padding-top: 8rem;
+    padding-inline: 3.3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    @media (min-width: 568px) {
+      padding-inline: ${double ? "3rem" : "15.5rem"};
+
+      width: ${double ? "50%" : "null"};
+    }
+    @media (min-width: 1100px) {
+      padding-inline: 0rem;
+      padding-top: 12rem;
+      width: 30%;
+    }
+  `,
+);
 
 const Title = styled.h3`
   color: #000;

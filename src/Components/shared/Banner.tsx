@@ -4,7 +4,6 @@ import { Button } from ".";
 type PropsType = {
   title: string;
   description: string;
-  buttonText: string;
 
   images: {
     mobile: string;
@@ -12,7 +11,8 @@ type PropsType = {
     desktop: string;
   };
   Bg: string;
-  to: string;
+  to?: string;
+  buttonText?: string;
   right?: boolean;
 };
 
@@ -48,7 +48,7 @@ const Banner: React.FC<PropsType> = ({
           {description}
         </Description>
 
-        <Button text={buttonText} Bg={Bg} to={to} />
+        {buttonText && <Button text={buttonText} Bg={Bg} to={to} />}
       </InfoDiv>
     </Wrapper>
   );

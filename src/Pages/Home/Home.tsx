@@ -147,6 +147,6 @@ const FeaturesWrapper = styled.div`
     padding-inline: 16.5rem;
     align-items: flex-end;
 
-    gap: 3rem;
+    column-gap: 3rem;
   }
 `;
