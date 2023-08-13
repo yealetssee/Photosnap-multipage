@@ -60,11 +60,11 @@ type ImageType = {
   mobile: string;
   tablet: string;
   desktop: string;
-  right: boolean;
+  right?: boolean;
 };
 type BackgroundType = {
   Bg: string;
-  right: boolean;
+  right?: boolean;
 };
 
 const Wrapper = styled.div`
@@ -74,8 +74,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const ImageDiv = styled.div(
-  ({ mobile, tablet, desktop, right }: ImageType) => css`
+const ImageDiv = styled.div<ImageType>(
+  ({ mobile, tablet, desktop, right }) => css`
     width: 100%;
     padding-top: 56.25%;
     position: relative;

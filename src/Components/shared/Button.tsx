@@ -2,10 +2,10 @@ import { Arrow } from "@/Svg";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Button: React.FC<{ text: string; Bg: string; to: string }> = ({
+const Button: React.FC<{ text: string; Bg: string; to?: string }> = ({
   text,
   Bg,
-  to,
+  to = "",
 }) => {
   return (
     <Link to={to} style={{ textDecoration: "none" }}>
