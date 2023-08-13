@@ -17,7 +17,7 @@ const MainBanner = () => {
           Kentucky and West Virginia, and while the ridges are not high, the
           terrain is extremely rugged.
         </Description>
-        <Button text="read the story" to="stories" Bg="black" />
+        <Button text="read the story" to="/pricing" Bg="black" />
       </InfoDiv>
     </Wrapper>
   );

@@ -7,7 +7,7 @@ const InviteBanner = () => {
     <Wrapper>
       <InfoDiv>
         <Title>We're in beta. Get your invite today!</Title>
-        <Button to="pricing" text="get an invite" Bg="black" />
+        <Button to="/pricing" text="get an invite" Bg="black" />
       </InfoDiv>
     </Wrapper>
   );

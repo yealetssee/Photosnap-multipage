@@ -24,7 +24,7 @@ const StoriesBanner: React.FC<PropsType> = ({
         {date && <DateSpan>{date}</DateSpan>}
         <Title>{title}</Title>
         <Author>{author}</Author>
-        <Button to="stories" text="read story" Bg="black" />
+        <Button text="read story" to="/pricing" Bg="black" />
       </InfoDiv>
     </Wrapper>
   );
