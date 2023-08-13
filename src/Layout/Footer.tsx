@@ -1,5 +1,5 @@
 import { Button } from "@/Components/shared";
-import { Arrow, Logo, SocialLogos } from "@/Svg";
+import { Logo, SocialLogos } from "@/Svg";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -89,8 +89,6 @@ const MenuLinkItem = styled.span`
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 `;
-
-const InviteSpan = styled(MenuLinkItem)``;
 
 const RightsSpan = styled.span`
   font-size: 1.5rem;
