@@ -21,7 +21,7 @@ const Feature: React.FC<PropsType> = ({ logo, title, description, double }) => {
 export default Feature;
 
 type PropType = {
-  double: boolean;
+  double?: boolean;
 };
 
 const Wrapper = styled.div<PropType>(
