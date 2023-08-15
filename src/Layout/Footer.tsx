@@ -58,8 +58,12 @@ const FooterEl = styled.footer`
   }
 
   @media (min-width: 1100px) {
+    /* display: block; */
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: auto 12.2rem;
+    padding-block: 6.5rem;
+    padding-inline: 17rem;
+    grid-gap: 0;
   }
 `;
 
@@ -79,6 +83,8 @@ const FooterMenu = styled.ul`
   @media (min-width: 1100px) {
     flex-direction: column;
     grid-column: 2/3;
+    margin-top: -1rem;
+    margin-left: -20rem;
   }
 `;
 
@@ -96,12 +102,21 @@ const RightsSpan = styled.span`
   color: rgb(255, 255, 255, 0.5025);
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: 1100px) {
+    grid-row: 2/3;
+    grid-column: 3/-1;
+    align-self: self-end;
+  }
 `;
 
 const SocialWrapper = styled.div`
   @media (min-width: 568px) {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 3/-1;
+  }
+  @media (min-width: 1100px) {
+    grid-row: 2/3;
+    align-self: flex-end;
   }
 `;
 
@@ -109,5 +124,10 @@ const ButtonWrapper = styled(SocialWrapper)`
   @media (min-width: 568px) {
     grid-column: 2/3;
     grid-row: 1/3;
+  }
+  @media (min-width: 1100px) {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+    margin-top: -3rem;
   }
 `;
